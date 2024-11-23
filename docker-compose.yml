@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:17.1
+    environment:
+      - "POSTGRES_DB=db_testing"
+      - "POSTGRES_PASSWORD=password"
+    ports:
+      - 5432:5432
+    # volumes:
+    #   - postgres-data:/var/lib/postgresql/data
+# volumes:
+#   postgres-data:
